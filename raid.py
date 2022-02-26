@@ -21,12 +21,11 @@ class RaidBot:
         logger.info(f"@{username} is ready to attack!")
 
     def start(self):
-        @self.dp.message_handler(commands=["raid"])
+        @self.dp.message_handler(commands=["raid", "start", "a"], command_prefix="!./")
         async def on_message(message: types.Message):
             if message.from_user.id == config.ADMIN_ID:
-                for _ in range(config.COUNT):
-                    await message.answer(random.choice(config.MESSAGES))
-                    time.sleep(config.DELAY)
+                await message.answer(random.choice(config.MESSAGES))
+                time.sleep(config.DELAY)
 
         executor.start_polling(self.dp, skip_updates=True, on_startup=self.on_startup)
 
