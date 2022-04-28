@@ -1,8 +1,10 @@
-ADMIN_ID = 1 # ваш ID в Telegram
+ADMIN_ID = 477748972 # ваш ID в Telegram
 
 TOKENS = [
-    "TOKEN1",
-    "TOKEN2"
+    "1780478092:AAG8JfMAcGwSqjpIZSsTYOpTt_lGYJLatlA",
+    "1675910288:AAGhuISww_J_LiYwEWy1jrl1kJPzlE6cYfg",
+    "5393645403:AAFh-rELb57bm8Sp1yAy4-OzbxXNZW_xuVk",
+    "5308417172:AAGDhPjXAtrZiWIVUUFvDKbm-duR9YmUMWA"
 ] # ваши токены от @BotFather
 
 MESSAGES = [
